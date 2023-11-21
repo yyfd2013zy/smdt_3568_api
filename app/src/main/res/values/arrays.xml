@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_title">
+        <item>About</item>
+        <item>Device Information</item>
+        <item>Display Manage</item>
+        <item>Network Manage</item>
+        <item>System Control</item>
+        <item>Hardware Control</item>
+        <item>Customer</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="rotation_value">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+    <string-array name="dpi_value">
+        <item>120</item>
+        <item>160</item>
+        <item>200</item>
+        <item>240</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item >Small</item>
+        <item >Default</item>
+        <item >Large</item>
+        <item >Largest</item>
+    </string-array>
+    <string-array name="entryvalues_font_size" translatable="false">
+        <item>0.85</item>
+        <item>1.00</item>
+        <item>1.15</item>
+        <item>1.30</item>
+    </string-array>
+    <string-array name="gpio_array">
+        <item>GPIO_1</item>
+        <item>GPIO_2</item>
+        <item>GPIO_3</item>
+        <item>GPIO_4</item>
+        <item>GPIO_5</item>
+        <item>GPIO_6</item>
+        <item>GPIO_7</item>
+        <item>GPIO_8</item>
+        <item>GPIO_9</item>
+        <item>GPIO_10</item>
+    </string-array>
+    <string-array name="api_level">
+        <item>LEVEL0</item>
+        <item>LEVEL1</item>
+        <item>LEVEL2</item>
+        <item>LEVEL3</item>
+    </string-array>
+    <string-array name="uart_array">
+        <item>uart0</item>
+        <item>uart1</item>
+        <item>uart2</item>
+        <item>uart3</item>
+        <item>uart4</item>
+        <item>uart5</item>
+        <item>uart6</item>
+        <item>uart7</item>
+        <item>uart8</item>
+        <item>uart9</item>
+        <item>uart10</item>
+    </string-array>
+    <string-array name="wg_array">
+        <item>26</item>
+        <item>34</item>
+    </string-array>
+    <string-array name="relay_array">
+        <item>No automatic closing mode</item>
+        <item>Automatic closing mode (Highly effective-Default low level)</item>
+        <item>Automatic closing mode (Low effective-Default low level)</item>
+    </string-array>
+    <string-array name="audio_output_type_entries">
+        <item>@string/audio_output_type_auto</item>
+        <item>@string/audio_output_type_force_speaker</item>
+        <item>@string/audio_output_type_force_headset</item>
+        <item>@string/audio_output_type_force_speaker_headset</item>
+        <item>@string/audio_output_type_force_hdmi</item>
+        <item>@string/audio_output_type_force_speaker_hdmi</item>
+        <item>@string/audio_output_type_force_headset_hdmi</item>
+        <item>@string/audio_output_type_force_all</item>
+    </string-array>
+    <string-array name="audio_input_type_entries">
+        <item>@string/audio_input_type_auto</item>
+        <item>@string/audio_input_type_force_mic</item>
+        <item>@string/audio_input_type_force_headset</item>
+    </string-array>
+    <string-array name="network_array">
+        <item>@string/net_status_dhcp</item>
+        <item>@string/net_status_static</item>
+    </string-array>
+    <string-array name="usb_port">
+        <item>USBOTG1</item>
+        <item>USBHOST1</item>
+        <item>USBHOST2</item>
+        <item>USBHOST3</item>
+    </string-array>
+    <string-array name="control">
+        <item>wifi power</item>
+        <item>wifi reset</item>
+        <item>led control</item>
+        <item>speak power</item>
+        <item>lvds power</item>
+        <item>lvds reset</item>
+        <item>4G power</item>
+        <item>4G reset</item>
+        <item>LAN power</item>
+        <item>LAN reset</item>
+        <item>SD power</item>
+        <item>SD reset</item>
+        <item>TP power</item>
+        <item>TP reset</item>
+        <item>GBE reset</item>
+        <item>EDP BackLight power</item>
+        <item>Fan power</item>
+    </string-array>
+    <integer-array name="control_value">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </integer-array>
+    <string-array name="baudrates_value">
+        <item>50</item>
+        <item>75</item>
+        <item>110</item>
+        <item>134</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+        <item>500000</item>
+        <item>576000</item>
+        <item>921600</item>
+        <item>1000000</item>
+        <item>1152000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>2500000</item>
+        <item>3000000</item>
+        <item>3500000</item>
+        <item>4000000</item>
+    </string-array>
+    <string-array name="data_bits">
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="stop_bits">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="parity">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="flow_ctrl">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_connect_type">
+        <item>NO PASSWORD</item>
+        <item>WEP</item>
+        <item>WPA</item>
+    </string-array>
+    <string-array name="network_type">
+        <item>eth0</item>
+        <item>eth1</item>
+        <item>wlan0</item>
+        <item>mobile</item>
+    </string-array>
+    <string-array name="national_language">
+        <item>zh_CN</item>
+        <item>en_US</item>
+    </string-array>
+    <string-array name="ntp_server">
+        <item>time.windows.com</item>
+        <item>cn.pool.ntp.org</item>
+    </string-array>
+    <string-array name="time_zone">
+        <item>Asia/Shanghai</item>
+        <item>America/New_York</item>
+    </string-array>
+    <string-array name="time_format">
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="launcher">
+        <item>android.app.smdt.launcher</item>
+        <item>com.android.launcher3</item>
+    </string-array>
+    <string-array name="log">
+        <item>@string/log_all</item>
+        <item>@string/log_kernel</item>
+        <item>@string/log_android</item>
+        <item>@string/log_media</item>
+        <item>@string/log_radio</item>
+        <item>@string/log_prop</item>
+        <item>@string/log_config</item>
+        <item>@string/log_misc</item>
+        <item>@string/log_app</item>
+        <item>@string/log_mcu</item>
+    </string-array>
+    <string-array name="three_light">
+        <item>LED_RED</item>
+        <item>LED_GREEN</item>
+        <item>LED_WHITE</item>
+    </string-array>
+</resources>

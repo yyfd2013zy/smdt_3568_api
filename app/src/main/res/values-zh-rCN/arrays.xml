@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_title">
+        <item>关于</item>
+        <item>设备信息</item>
+        <item>显示管理</item>
+        <item>网络管理</item>
+        <item>系统控制</item>
+        <item>硬件控制</item>
+        <item>行业客制</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>"小"</item>
+        <item>"默认"</item>
+        <item>"大"</item>
+        <item>"最大"</item>
+    </string-array>
+    <string-array name="relay_array">
+        <item>不自动闭合模式</item>
+        <item>自动闭合模式（高有效-默认低电平）</item>
+        <item>自动闭合模式（低有效-默认低电平）</item>
+    </string-array>
+</resources>

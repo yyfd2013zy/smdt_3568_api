@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/net_title_information"
+                style="@style/texttitle"
+                android:text="@string/net_title_information" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_current_net" />
+
+                <TextView
+                    android:id="@+id/net_get_current_net"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_eth0_network" />
+
+                <TextView
+                    android:id="@+id/net_get_eth0_network"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_eth1_network">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_eth1_network" />
+
+                <TextView
+                    android:id="@+id/net_get_eth1_network"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_eth0_macaddress" />
+
+                <TextView
+                    android:id="@+id/net_get_eth0_macaddress"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_eth1_mac">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_eth1_macaddress" />
+
+                <TextView
+                    android:id="@+id/net_get_eth1_macaddress"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_wlan_network" />
+
+                <TextView
+                    android:id="@+id/net_get_wlan_network"
+                    style="@style/textstyle4" />
+
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_wlan_macaddress" />
+
+                <TextView
+                    android:id="@+id/net_get_wlan_macaddress"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_get_wlan_rssi" />
+
+                <TextView
+                    android:id="@+id/net_get_wlan_rssi"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/ip" />
+
+                <TextView
+                    android:id="@+id/net_get_ipaddress"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/gateway" />
+
+                <TextView
+                    android:id="@+id/net_get_gateway"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/netmask" />
+
+                <TextView
+                    android:id="@+id/net_get_netmask"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/dns1" />
+
+                <TextView
+                    android:id="@+id/net_get_dns1"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/dns2" />
+
+                <TextView
+                    android:id="@+id/net_get_dns2"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/imei" />
+
+                <TextView
+                    android:id="@+id/imei"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/iccid" />
+
+                <TextView
+                    android:id="@+id/iccid"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/imsi" />
+
+                <TextView
+                    android:id="@+id/imsi"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- setting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/net_title_setting"
+                style="@style/texttitle"
+                android:text="@string/net_title_setting" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_set_network_enable" />
+
+                <Spinner
+                    android:id="@+id/net_set_network_enable_spinner"
+                    style="@style/spinnerstyle" />
+
+                <Switch
+                    android:id="@+id/net_set_network_enable_switch"
+                    style="@style/switchstyle"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/net_set_network"
+                    style="@style/btnstyle1"
+                    android:text="@string/net_set_network" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <RadioGroup
+                        android:id="@+id/net_set_network_group"
+                        style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/net_set_network_eth0"
+                            style="@style/radiostyle"
+                            android:checked="true"
+                            android:text="@string/net_set_network_eth0" />
+
+                        <RadioButton
+                            android:id="@+id/net_set_network_eth1"
+                            style="@style/radiostyle"
+                            android:text="@string/net_set_network_eth1" />
+
+                        <RadioButton
+                            android:id="@+id/net_set_network_wlan"
+                            style="@style/radiostyle"
+                            android:text="@string/net_set_network_wlan" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/net_set_network_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/net_set_wifi_connect"
+                    style="@style/btnstyle1"
+                    android:text="@string/net_set_wifi_connect" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/net_set_wifi_account_et"
+                        style="@style/editstyle"
+                        android:hint="@string/account"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/net_set_wifi_pwd_et"
+                        style="@style/editstyle"
+                        android:hint="@string/pwd"
+                        android:text="" />
+
+                    <Spinner
+                        android:id="@+id/net_set_wifi_spinner"
+                        style="@style/spinnerstyle" />
+
+                    <TextView
+                        android:id="@+id/net_set_wifi_connect_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_set_wifi_ap" />
+
+                <Switch
+                    android:id="@+id/net_set_wifi_ap_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/net_set_network_protect"
+                    style="@style/btnstyle1"
+                    android:text="@string/net_set_network_protect" />
+
+                <TextView
+                    android:id="@+id/net_set_network_protect_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/net_set_network_priority"
+                    style="@style/btnstyle1"
+                    android:text="@string/net_set_network_priority" />
+
+                <TextView
+                    android:id="@+id/net_set_network_priority_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/net_set_network_multi" />
+
+                <Switch
+                    android:id="@+id/net_set_network_multi_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,337 @@
+<resources>
+    <string name="app_name" translatable="false">OS ApiDemo</string>
+
+    <string name="unknown">Unknown</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="path">Absolute path</string>
+    <string name="packagename">App package name</string>
+    <string name="ip">IP Address</string>
+    <string name="account">Account</string>
+    <string name="pwd">Password</string>
+    <string name="old_pwd">Old Password</string>
+    <string name="second">Second</string>
+    <string name="millis">Millis</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="min">Minute</string>
+    <string name="long_click_msg">Long press to copy</string>
+    <string name="long_click_toast">The data has been copied </string>
+    <string name="device_id">Device ID</string>
+    <string name="area_id">Area ID</string>
+    <string name="start_addr">start address</string>
+    <string name="data_size">data size</string>
+    <string name="data">data</string>
+    <string name="number">number</string>
+    <string name="gateway">Gateway</string>
+    <string name="netmask">Netmask</string>
+    <string name="dns1">DNS 1</string>
+    <string name="dns2">DNS 2</string>
+    <string name="baudrate">baud rate</string>
+    <string name="databits">data bits</string>
+    <string name="stopbits">stop bits</string>
+    <string name="parity">parity</string>
+    <string name="flow_ctrl">flow control</string>
+    <string name="support">support</string>
+    <string name="no_support">no support</string>
+    <string name="log_all">All</string>
+    <string name="log_kernel">Kernel</string>
+    <string name="log_android">Android</string>
+    <string name="log_media">Media</string>
+    <string name="log_radio">Radio</string>
+    <string name="log_prop">Prop</string>
+    <string name="log_config">Config</string>
+    <string name="log_misc">Misc</string>
+    <string name="log_app">App</string>
+    <string name="log_mcu">Mcu</string>
+    <string name="error_code">Error Code</string>
+    <string name="move_up">Move up</string>
+    <string name="move_down">Move down</string>
+
+    <!-- mainFragment -->
+    <string name="official_site">OS:</string>
+    <string name="telephone">TEL:</string>
+    <string name="resource">RESOURCE:</string>
+    <string name="resource_msg">Click to get</string>
+
+    <!-- deviceFragment -->
+    <string name="board_type">Board Type</string>
+    <string name="model">HW Model</string>
+    <string name="serial">Serial</string>
+    <string name="company">Company</string>
+    <string name="android_version">Android SDK</string>
+    <string name="software_version">Software Version</string>
+    <string name="hardware_version">Hardware Version</string>
+    <string name="kernel_version">SW kernel Version</string>
+    <string name="mcu_version">MCU Version</string>
+    <string name="security_patch">Android security patch level</string>
+    <string name="face_detect">Face Detect</string>
+    <string name="npu_version">NPU Driver Version</string>
+    <string name="total_memory">Total memory</string>
+    <string name="avail_memory">Avail memory</string>
+    <string name="total_storage">Total storage</string>
+    <string name="avail_storage">Avail storage</string>
+    <string name="cpu_frequency">CPU frequency</string>
+    <string name="cpu_temperature">CPU temperature</string>
+    <string name="cpu_usage">CPU usage</string>
+    <string name="app_used">App memory used</string>
+    <string name="dev_temperature">Device temperature</string>
+    <string name="web_view_version">WebView Version</string>
+    <string name="imei" translatable="false">IMEI</string>
+    <string name="iccid" translatable="false">ICCID</string>
+    <string name="imsi" translatable="false">IMSI</string>
+    <!-- displayFragment -->
+    <string name="disp_title_screen">Screen</string>
+    <string name="disp_title_backlight">Back Light</string>
+    <string name="disp_title_systemui">System UI</string>
+    <string name="disp_title_hdmi">HDMI</string>
+    <string name="disp_set_params">Set dispaly params</string>
+    <string name="disp_get_params">Get dispaly params</string>
+    <string name="disp_set_backlight">Set the first channel backlight brightness</string>
+    <string name="disp_set_backlight2">Set the second channel backlight brightness</string>
+    <string name="disp_get_pwm_freq">Get Pwm Frequency</string>
+    <string name="disp_get_pwm_freq_summary">When the second backlight interface is connected to the external PWM (MCU) interface, it will take effect when the brightness is changed, and the range is 100~3000hz</string>
+    <string name="disp_set_backlight_enable">Set the first backlight switch</string>
+    <string name="disp_set_backlight_enable2">Set the second backlight switch</string>
+    <string name="disp_set_over_scan">Set Main screen over scan(80-100)</string>
+    <string name="disp_set_over_scan2">Set Secondary screen over scan(80-100)</string>
+    <string name="disp_set_over_scan3">Set Third screen over scan(80-100)</string>
+    <string name="disp_set_over_scan4">Set Fourth screen over scan(80-100)</string>
+    <string name="disp_set_dpi">Set DPI</string>
+    <string name="disp_get_screen_resolution">Main Screen Resolution</string>
+    <string name="disp_get_screen_resolution2">Secondary screen Resolution</string>
+    <string name="disp_get_screen_resolution3">Third screen Resolution</string>
+    <string name="disp_get_screen_resolution4">Fourth screen Resolution</string>
+    <string name="disp_screenshot_bitmap">screen shot</string>
+    <string name="disp_screenshot">screen shot and save to the specified path</string>
+    <string name="disp_set_rotation">Set Main screen rotation(Click on settings,reboot to take effect)</string>
+    <string name="disp_set_rotation2">Set Secondary screen rotation(Click on settings,reboot to take effect)</string>
+    <string name="disp_set_rotation3">Set Third screen rotation(Click on settings,reboot to take effect)</string>
+    <string name="disp_set_rotation4">Set Fourth screen rotation(Click on settings,reboot to take effect)</string>
+    <string name="disp_set_logo">set Boot Logo</string>
+    <string name="disp_set_animation">set Boot Animation</string>
+    <string name="disp_set_statusbar">Set status bar show enable</string>
+    <string name="disp_set_navigationbar">Set navigation bar show enable</string>
+    <string name="disp_set_statusbar_drag">Set the display status of the pull status bar</string>
+    <string name="disp_set_gesturebar">Set Gesture to show status bar and navigation bar</string>
+    <string name="disp_set_systemui">Set whether SystemUI uses OS mode</string>
+    <string name="disp_add_hide_list">Add App Launcher Hide List(Restart to take effect)</string>
+    <string name="disp_get_hide_list">Get App Launcher Hide List</string>
+    <string name="disp_del_hide_list">Delete App Launcher Hide List(Restart to take effect)</string>
+    <string name="disp_get_hdmiin">Get hdmi-in Status</string>
+    <string name="disp_set_hdmiin_audio">Set hdmi-in audio enable</string>
+    <string name="disp_set_hdmiin_nosignal">Set hdmi-in no signal display screen</string>
+    <string name="disp_set_hdmiout">Set hdmi-out Enable</string>
+    <string name="disp_set_media_mode">Set 4K media mode Enable</string>
+    <!-- netFragment -->
+    <string name="net_title_information">Information</string>
+    <string name="net_title_setting">Setting</string>
+    <string name="net_get_eth0_macaddress">ETH0 Mac Address</string>
+    <string name="net_get_eth1_macaddress">ETH1 Mac Address</string>
+    <string name="net_get_wlan_macaddress">Wifi Mac Address</string>
+    <string name="net_set_ipaddress">Set Ip Address</string>
+    <string name="net_get_current_net">current network</string>
+    <string name="net_set_network_enable">Set network enable</string>
+    <string name="net_set_network">Set network (DHCP/Static)</string>
+    <string name="net_set_network_eth0">ETH0</string>
+    <string name="net_set_network_eth1">ETH1</string>
+    <string name="net_set_network_wlan">WIFI</string>
+    <string name="net_get_eth0_network">ETH0 connect mode</string>
+    <string name="net_get_eth1_network">ETH1 connect mode</string>
+    <string name="net_get_wlan_network">Wifi connect mode</string>
+    <string name="net_get_wlan_rssi">Wifi connect rssi</string>
+    <string name="net_status_dhcp">DHCP</string>
+    <string name="net_status_static">Static</string>
+    <string name="net_set_network_speed">Set network speed</string>
+    <string name="net_get_network_speed">Get network speed</string>
+    <string name="net_set_wifi_default_pwd">Set wifi default password(Restart to take effect)</string>
+    <string name="net_get_wifi_default_pwd">Get wifi default password</string>
+    <string name="net_set_wifi_connect">Set up connection to specify WiFi</string>
+    <string name="net_set_wifi_ap">Set wifi ap enable</string>
+    <string name="net_set_network_protect">Set Network Protect</string>
+    <string name="net_set_network_priority">Set network priority(Restart to take effect)</string>
+    <string name="net_set_network_priority_title">Network priority (from top to bottom, from high to low)</string>
+    <string name="net_set_network_multi">Set multi network coexistence(Restart to take effect)</string>
+
+    <!-- sysFragment -->
+    <string name="sys_title_settings">Settings</string>
+    <string name="sys_set_bluetooth">Set bluetooth enable</string>
+    <string name="sys_set_location">Set location enable</string>
+    <string name="sys_set_airplane">Set airplane enable</string>
+    <string name="sys_set_hwstack">Set HW Stack enable</string>
+    <string name="sys_set_model">Set device model</string>
+    <string name="sys_set_software_version">Set software version</string>
+    <string name="sys_set_factory_company">Set company</string>
+    <string name="sys_set_ntp_server">Set NTP time server</string>
+    <string name="sys_set_softkeyboard">Set soft-keyboard enable</string>
+    <string name="sys_set_keyreport">Set Key report enable(Tips:if you can’t click, please restart the APK to release it)</string>
+    <string name="sys_set_touchreport">Set Touch report enable(Tips:if you can’t click, please restart the APK to release it)</string>
+    <string name="sys_copy_file">Copy file</string>
+    <string name="sys_set_national_language">Set national and language</string>
+    <string name="sys_set_def_inputmethod">Set default input method</string>
+    <string name="sys_get_def_inputmethod_list">Get input method list</string>
+    <string name="sys_set_timezone">Set timezone</string>
+    <string name="sys_set_timeformat">Set time format</string>
+    <string name="sys_set_time">Set time(need to close auto sync time)</string>
+    <string name="sys_set_system_fontsize">Set system fontsize</string>
+    <string name="sys_set_network_time_sync">Set network time sync enable</string>
+
+    <string name="sys_title_time_language">Time and Language</string>
+
+    <string name="sys_title_app">Application Manager</string>
+    <string name="sys_set_launcher">Set default launcher</string>
+    <string name="sys_set_system_boot_app">Set system boot app</string>
+    <string name="sys_set_daemons">Set daemons app</string>
+    <string name="sys_do_silent_install">Silent install APK</string>
+    <string name="sys_do_silent_uninstall">Silent uninstall APK</string>
+    <string name="sys_add_white_list">Add app to whitelist(List of select types)</string>
+    <string name="sys_add_black_list">Add app to blacklist(List of select types)</string>
+    <string name="sys_get_white_list">Get whitelist(List of select types)</string>
+    <string name="sys_get_black_list">Get blacklist(List of select types)</string>
+    <string name="black_list">Black list</string>
+    <string name="white_list">White list</string>
+    <string name="install_list">Install </string>
+    <string name="uninstall_list">Uninstall </string>
+    <string name="sys_del_white_list">Delete app from whitelist(List of select types)</string>
+    <string name="sys_del_black_list">Delete app from blacklist(List of select types)</string>
+
+    <string name="sys_title_volume">Volume</string>
+    <string name="sys_set_volume">Set system media volume</string>
+    <string name="sys_set_volume_mute">Set system media volume mute</string>
+    <string name="sys_set_out_volume">Set speaker volume gain(Restart takes effect)</string>
+    <string name="sys_set_audio_output">Set audio output type(Restart takes effect)</string>
+    <string name="sys_set_audio_input">Set audio input type(Restart takes effect)</string>
+
+    <string name="sys_title_io">IO Control</string>
+    <string name="sys_set_gpio">Set GPIO (Click to jump to Tools)</string>
+    <string name="sys_set_gpio_direction_in">In</string>
+    <string name="sys_set_gpio_direction_out">Out</string>
+    <string name="sys_set_gpio_value_low">Low power</string>
+    <string name="sys_set_gpio_value_high">High power</string>
+    <string name="sys_set_control">Set Other Control</string>
+    <string name="sys_get_control">Get Other Control</string>
+
+    <string name="sys_title_timer">Timer Switch</string>
+    <string name="sys_set_watchdog">Set WatchDog enable</string>
+    <string name="sys_set_watchdog_feed">Click to feed the WatchDog</string>
+    <string name="sys_set_watchdog_time">Set the shutdown time after not feeding the WatchDog</string>
+    <string name="sys_set_timer">Set timer switch enable(24-hour format, repeated every day)</string>
+    <string name="sys_set_timer_on_time">Timing boot time(e.g.14:00)</string>
+    <string name="sys_set_timer_off_time">Timing shutdown time(e.g.13:00)</string>
+    <string name="sys_set_timer_on">Set the timing boot time (MM/DD/YYYY, HH/MM)</string>
+    <string name="sys_set_timer_off">Set the timing shutdown time (MM/DD/YYYY, HH/MM)</string>
+    <string name="sys_set_power_off">Click to power off</string>
+    <string name="sys_set_reboot">Click to reboot</string>
+    <string name="sys_set_reboot_mcu">Click to reboot (By MCU)</string>
+
+    <string name="sys_title_debug">Update and Debug</string>
+    <string name="sys_set_development">Set development enable</string>
+    <string name="sys_set_backup">Set apps backup data</string>
+    <string name="sys_get_backup">Get apps backup data</string>
+    <string name="sys_get_backup_path">Backup path (shown after clicking set or restore)</string>
+    <string name="sys_do_update">Upgrading firmware locally</string>
+    <string name="sys_recovery">Recovery</string>
+    <string name="sys_get_systemlog">Get system log to the root dir</string>
+    <string name="sys_get_processlog">Get system log line by line</string>
+    <string name="sys_get_anr">Get ANR log</string>
+    <string name="sys_set_api_debug">Set API debug level</string>
+    <string name="sys_get_api_error">Get API error code description</string>
+    <string name="sys_set_adb">Set ADB debug enable</string>
+    <string name="sys_set_adb_net">Set Net ADB debug enable</string>
+    <string name="sys_set_otg">Set OTG enable</string>
+    <string name="sys_set_pointer">Set Pointer location enable</string>
+    <string name="sys_set_float_ball">Set Float ball enable</string>
+    <string name="sys_log_fail">Log cannot be started.</string>
+
+    <string name="sys_set_auto_install">Set allow automatic installation of apps</string>
+    <string name="sys_get_auto_install">Get auto-install app policy configuration</string>
+    <string name="sys_add_auto_install">Add auto install app policy configuration</string>
+    <string name="sys_del_auto_install">Delete auto install app policy configuration</string>
+    <string name="sys_auto_install_path">Relative path, for example, enter directly in the root directory of external storage: app.apk</string>
+    <string name="sys_set_update_ex">Set allow external storage devices to upgrade, clone system</string>
+
+    <!-- HardwareFragment -->
+    <string name="hw_title_storage">Storage</string>
+    <string name="hw_get_sdcard">Get sdcard path</string>
+    <string name="hw_get_usb">Get udisk path</string>
+    <string name="hw_umount_ex">Unmount External Storage</string>
+    <string name="hw_get_private">Get Private Partition Size</string>
+    <string name="hw_emmc" translatable="false">EMMC</string>
+    <string name="hw_eeprom" translatable="false">EEPROM</string>
+    <string name="hw_read_private">Read Private Partition</string>
+    <string name="hw_write_private">Write Private Partition</string>
+
+    <string name="hw_title_uart">Uart</string>
+    <string name="hw_get_uart">Get uart path</string>
+    <string name="hw_open_uart">Open uart</string>
+    <string name="hw_close_uart">Close uart</string>
+    <string name="hw_send_uart">Send uart</string>
+    <string name="hw_receive_uart">Received data</string>
+
+    <string name="hw_title_camera">Camera</string>
+    <string name="hw_get_camera_vidpid">Ger camera Vid&amp;Pid</string>
+    <string name="hw_set_camera">Set camera config</string>
+
+    <string name="hw_title_i2c">I2C</string>
+    <string name="hw_open_i2c">I2C enable</string>
+    <string name="hw_write_i2c">I2C write</string>
+    <string name="hw_read_i2c">I2C read</string>
+
+    <string name="hw_title_spi">SPI</string>
+    <string name="hw_open_spi">SPI enable</string>
+    <string name="hw_write_spi">SPI write</string>
+    <string name="hw_read_spi">SPI read</string>
+
+    <string name="hw_title_can">CAN</string>
+    <string name="hw_open_can">CAN enable</string>
+    <string name="hw_send_can">CAN send</string>
+    <string name="hw_receive_can">CAN receive</string>
+
+    <string name="hw_title_usb">USB</string>
+    <string name="hw_set_usbpower">Set USB power</string>
+
+    <string name="hw_title_light">Light</string>
+    <string name="hw_set_light">Set three color light</string>
+
+    <!-- CustomFragment -->
+    <string name="custom_send_wg_card">Wiegand send CardId</string>
+    <string name="custom_send_wg_card2">Wiegand use HID&amp;PID send CardId</string>
+    <string name="custom_read_wg">Wiegand Read data</string>
+    <string name="custom_release_wg">Wiegand release</string>
+    <string name="custom_set_relay_mode">Set relay IO mode</string>
+    <string name="custom_set_relay">Set relay enable</string>
+    <string name="custom_dial">No interface dialing</string>
+    <string name="custom_endcall">Hang up without interface</string>
+    <string name="custom_clean_recent">Clear recently run tasks</string>
+    <string name="custom_kill_pid">End the process based on PID</string>
+    <string name="custom_get_pid">Get PID according to package name</string>
+    <string name="custom_get_pid_info">Get current PID process information</string>
+    <string name="custom_add_encryption">Add application to encryption list(Restart to take effect)</string>
+    <string name="custom_get_encryption">Get a list of encrypted apps</string>
+    <string name="custom_del_encryption">Delete application from encryption list</string>
+    <string name="custom_get_setting_list">Get Settings list</string>
+    <string name="custom_set_setting_list">Set Settings list show</string>
+    <string name="custom_ledbrightness_id0">Led brightness 0</string>
+    <string name="custom_ledbrightness_id1">Led brightness 1</string>
+    <string name="custom_set_desktop_app">Set custom desktop shortcut icons(Restart to take effect)</string>
+
+    <string name="audio_output_type_auto">AUTO</string>
+    <string name="audio_output_type_force_speaker">SPEAKER</string>
+    <string name="audio_output_type_force_headset">HEADSET</string>
+    <string name="audio_output_type_force_speaker_headset">SPEAKER + HEADSET</string>
+    <string name="audio_output_type_force_hdmi">HDMI</string>
+    <string name="audio_output_type_force_speaker_hdmi">SPEAKER + HDMI</string>
+    <string name="audio_output_type_force_headset_hdmi">HEADSET + HDMI</string>
+    <string name="audio_output_type_force_all">SPEAKER + HEADSET + HDMI</string>
+    <string name="audio_input_type_auto">AUTO</string>
+    <string name="audio_input_type_force_mic">MIC</string>
+    <string name="audio_input_type_force_headset">HEADSET</string>
+
+</resources>

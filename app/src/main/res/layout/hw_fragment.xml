@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- storage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_storage"
+                style="@style/texttitle"
+                android:text="@string/hw_title_storage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_get_sdcard"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_get_sdcard" />
+
+                <TextView
+                    android:id="@+id/hw_get_sdcard_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_get_usb"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_get_usb" />
+
+                <TextView
+                    android:id="@+id/hw_get_usb_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_umount_ex"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_umount_ex" />
+
+                <EditText
+                    android:id="@+id/hw_umount_ex_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/hw_umount_ex_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_get_private"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_get_private" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <RadioGroup
+                        android:id="@+id/hw_get_private_group"
+                        style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/hw_emmc"
+                            style="@style/radiostyle"
+                            android:checked="true"
+                            android:text="@string/hw_emmc" />
+
+                        <RadioButton
+                            android:id="@+id/hw_eeprom0"
+                            style="@style/radiostyle"
+                            android:text="EEPROM0" />
+
+                        <RadioButton
+                            android:id="@+id/hw_eeprom1"
+                            style="@style/radiostyle"
+                            android:text="EEPROM1" />
+
+                        <RadioButton
+                            android:id="@+id/hw_eeprom2"
+                            style="@style/radiostyle"
+                            android:text="EEPROM2" />
+
+                        <TextView
+                            android:id="@+id/hw_get_private_tv"
+                            style="@style/textstyle8" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_write_private"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_write_private" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/hw_write_private_areaid_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/area_id"
+                        android:text=""
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/hw_write_private_start_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/start_addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_write_private_size_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/data_size"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_write_private_data_et"
+                        style="@style/editstyle"
+                        android:hint="@string/data"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_write_private_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_read_private"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_read_private" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/hw_read_private_areaid_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/area_id"
+                        android:text=""
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/hw_read_private_start_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/start_addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_read_private_size_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/data_size"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_read_private_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- uart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_uart"
+                style="@style/texttitle"
+                android:text="@string/hw_title_uart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_get_uart" />
+
+                <Spinner
+                    android:id="@+id/hw_get_uart_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/hw_get_uart_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_open_uart"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_open_uart" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <TextView
+                        style="@style/textstyle7"
+                        android:paddingLeft="0dp"
+                        android:text="@string/baudrate" />
+
+                    <Spinner
+                        android:id="@+id/hw_open_uart_rate"
+                        style="@style/spinnerstyle2" />
+
+                    <TextView
+                        style="@style/textstyle7"
+                        android:text="@string/databits" />
+
+                    <Spinner
+                        android:id="@+id/hw_open_uart_databits"
+                        style="@style/spinnerstyle2" />
+
+                    <TextView
+                        style="@style/textstyle7"
+                        android:text="@string/stopbits" />
+
+                    <Spinner
+                        android:id="@+id/hw_open_uart_stopbits"
+                        style="@style/spinnerstyle2" />
+
+                    <TextView
+                        style="@style/textstyle7"
+                        android:text="@string/parity" />
+
+                    <Spinner
+                        android:id="@+id/hw_open_uart_parity"
+                        style="@style/spinnerstyle2" />
+
+                    <TextView
+                        style="@style/textstyle7"
+                        android:text="@string/flow_ctrl" />
+
+                    <Spinner
+                        android:id="@+id/hw_open_uart_flow_ctrl"
+                        style="@style/spinnerstyle2" />
+
+                    <TextView
+                        android:id="@+id/hw_open_uart_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_close_uart"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_close_uart" />
+
+                <TextView
+                    android:id="@+id/hw_close_uart_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_send_uart"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_send_uart" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <RadioGroup
+                        android:id="@+id/hw_send_uart_group"
+                        style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/hw_text"
+                            style="@style/radiostyle"
+                            android:checked="true"
+                            android:text="TEXT" />
+
+                        <RadioButton
+                            android:id="@+id/hw_hex"
+                            style="@style/radiostyle"
+                            android:text="HEX" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/hw_send_uart_et"
+                        style="@style/editstyle"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_send_uart_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_receive_uart"
+                    style="@style/btnstyle1"
+                    android:enabled="false"
+                    android:text="@string/hw_receive_uart" />
+
+                <TextView
+                    android:id="@+id/hw_receive_uart_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- camera -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_camera"
+                style="@style/texttitle"
+                android:text="@string/hw_title_camera" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_get_camera_vidpid"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_get_camera_vidpid"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/hw_get_camera_vidpid_et"
+                    style="@style/editstyle"
+                    android:hint="usb ID"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/hw_get_camera_vidpid_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_set_camera"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_set_camera" />
+
+                <TextView
+                    android:id="@+id/hw_set_camera_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- i2c -->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_i2c"
+                style="@style/texttitle"
+                android:text="@string/hw_title_i2c" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_open_i2c"
+                    android:textColor="@color/red" />
+
+                <Switch
+                    android:id="@+id/hw_open_i2c_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_write_i2c"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_write_i2c"
+                    android:textColor="@color/red" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/hw_write_i2c_slave_et"
+                        style="@style/editstyle"
+                        android:hint="slave addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_write_i2c_reg_et"
+                        style="@style/editstyle"
+                        android:hint="reg addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_write_i2c_data_et"
+                        style="@style/editstyle"
+                        android:hint="@string/data"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_write_i2c_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_read_i2c"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_read_i2c"
+                    android:textColor="@color/red" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/hw_read_i2c_slave_et"
+                        style="@style/editstyle"
+                        android:hint="slave addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_read_i2c_reg_et"
+                        style="@style/editstyle"
+                        android:hint="reg addr"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/hw_read_i2c_size_et"
+                        style="@style/editstyle"
+                        android:hint="@string/data_size"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_read_i2c_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        &lt;!&ndash; spi &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_spi"
+                style="@style/texttitle"
+                android:text="@string/hw_title_spi" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_open_spi"
+                    android:textColor="@color/red" />
+
+                <Switch
+                    android:id="@+id/hw_open_spi_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_write_spi"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_write_spi"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/hw_write_spi_size_et"
+                    style="@style/editstyle"
+                    android:hint="@string/data"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/hw_write_spi_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_read_spi"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_read_spi"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/hw_read_spi_data_et"
+                    style="@style/editstyle"
+                    android:hint="@string/data_size"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/hw_read_spi_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        &lt;!&ndash; can &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_can"
+                style="@style/texttitle"
+                android:text="@string/hw_title_can" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_open_can"
+                    android:textColor="@color/red" />
+
+                <Switch
+                    android:id="@+id/hw_open_can_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_send_can"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_send_can"
+                    android:textColor="@color/red" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/hw_send_can_id_et"
+                        style="@style/editstyle"
+                        android:hint="ID"
+                        android:text=""
+                        android:textColor="@color/red" />
+
+                    <EditText
+                        android:id="@+id/hw_send_can_data_et"
+                        style="@style/editstyle"
+                        android:hint="@string/data"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/hw_write_can_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/hw_receive_can"
+                    style="@style/btnstyle1"
+                    android:text="@string/hw_receive_can"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/hw_receive_can_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>-->
+
+        <!-- usb -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_usb"
+                style="@style/texttitle"
+                android:text="@string/hw_title_usb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_set_usbpower" />
+
+                <Spinner
+                    android:id="@+id/hw_set_usbpower_spinner"
+                    style="@style/spinnerstyle" />
+
+                <Switch
+                    android:id="@+id/hw_set_usbpower_switch"
+                    style="@style/switchstyle"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- light -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw_title_light"
+                style="@style/texttitle"
+                android:text="@string/hw_title_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/hw_set_light" />
+
+                <Spinner
+                    android:id="@+id/hw_set_light_spinner"
+                    style="@style/spinnerstyle" />
+
+                <Switch
+                    android:id="@+id/hw_set_light_switch"
+                    style="@style/switchstyle"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

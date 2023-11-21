@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- screen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disp_title_screen"
+                style="@style/texttitle"
+                android:text="@string/disp_title_screen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_get_params"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_get_params" />
+
+                <TextView
+                    android:id="@+id/disp_get_params_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_params"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_params" />
+
+                <EditText
+                    android:id="@+id/disp_set_params_et"
+                    style="@style/editstyle"
+                    android:layout_weight="2"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/disp_set_params_tv"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_over_scan"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_over_scan" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_left"
+                        style="@style/editstyle3"
+                        android:hint="@string/left" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_right"
+                        style="@style/editstyle3"
+                        android:hint="@string/right" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_top"
+                        style="@style/editstyle3"
+                        android:hint="@string/up" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_bottom"
+                        style="@style/editstyle3"
+                        android:hint="@string/down" />
+
+                    <TextView
+                        android:id="@+id/disp_set_over_scan_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_over_scan2"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_over_scan2" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_left2"
+                        style="@style/editstyle3"
+                        android:hint="@string/left" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_right2"
+                        style="@style/editstyle3"
+                        android:hint="@string/right" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_top2"
+                        style="@style/editstyle3"
+                        android:hint="@string/up" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_bottom2"
+                        style="@style/editstyle3"
+                        android:hint="@string/down" />
+
+                    <TextView
+                        android:id="@+id/disp_set_over_scan_tv2"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_overscan3">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_over_scan3"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_over_scan3" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_left3"
+                        style="@style/editstyle3"
+                        android:hint="@string/left" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_right3"
+                        style="@style/editstyle3"
+                        android:hint="@string/right" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_top3"
+                        style="@style/editstyle3"
+                        android:hint="@string/up" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_bottom3"
+                        style="@style/editstyle3"
+                        android:hint="@string/down" />
+
+                    <TextView
+                        android:id="@+id/disp_set_over_scan_tv3"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_overscan4">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_over_scan4"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_over_scan4" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_left4"
+                        style="@style/editstyle3"
+                        android:hint="@string/left" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_right4"
+                        style="@style/editstyle3"
+                        android:hint="@string/right" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_top4"
+                        style="@style/editstyle3"
+                        android:hint="@string/up" />
+
+                    <EditText
+                        android:id="@+id/disp_over_scan_bottom4"
+                        style="@style/editstyle3"
+                        android:hint="@string/down" />
+
+                    <TextView
+                        android:id="@+id/disp_set_over_scan_tv4"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_get_screen_resolution" />
+
+                <TextView
+                    android:id="@+id/disp_get_screen_resolution"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_get_screen_resolution2" />
+
+                <TextView
+                    android:id="@+id/disp_get_screen_resolution2"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_get_screen_resolution3" />
+
+                <TextView
+                    android:id="@+id/disp_get_screen_resolution3"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_get_screen_resolution4" />
+
+                <TextView
+                    android:id="@+id/disp_get_screen_resolution4"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- back light -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disp_title_backlight"
+                style="@style/texttitle"
+                android:text="@string/disp_title_backlight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_backlight" />
+
+                <android.app.smdt.apidemo.ui.MySeekBar
+                    android:id="@+id/disp_set_backlight_seekbar"
+                    style="@style/seekbarstyle" />
+
+                <TextView
+                    android:id="@+id/disp_set_backlight_tv"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_backlight2" />
+
+                <android.app.smdt.apidemo.ui.MySeekBar
+                    android:id="@+id/disp_set_backlight_seekbar2"
+                    style="@style/seekbarstyle" />
+
+                <TextView
+                    android:id="@+id/disp_set_backlight_tv2"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_pwm_freq"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_get_pwm_freq" />
+
+                <EditText
+                    android:id="@+id/disp_set_pwm_freq_et"
+                    style="@style/editstyle3"
+                    android:hint="@string/disp_get_pwm_freq_summary" />
+
+                <TextView
+                    android:id="@+id/disp_set_pwm_freq_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle"
+                android:contentDescription="TODO" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_backlight_enable" />
+
+                <Switch
+                    android:id="@+id/disp_set_backlight_enable_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_backlight_enable2" />
+
+                <Switch
+                    android:id="@+id/disp_set_backlight_enable_switch2"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- System UI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disp_title_systemui"
+                style="@style/texttitle"
+                android:text="@string/disp_title_systemui" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_dpi"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_dpi" />
+
+                <TextView
+                    android:id="@+id/disp_set_dpi_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_screenshot"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_screenshot" />
+
+                <EditText
+                    android:id="@+id/disp_screenshot_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/screen.png" />
+
+                <TextView
+                    android:id="@+id/disp_screenshot_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_rotation"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_rotation" />
+
+                <TextView
+                    android:id="@+id/disp_set_rotation_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_rotation2"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_rotation2" />
+
+                <TextView
+                    android:id="@+id/disp_set_rotation_tv2"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_rotation3">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_rotation3"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_rotation3" />
+
+                <TextView
+                    android:id="@+id/disp_set_rotation_tv3"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line_rotation4">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_rotation4"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_rotation4" />
+
+                <TextView
+                    android:id="@+id/disp_set_rotation_tv4"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_statusbar" />
+
+                <Switch
+                    android:id="@+id/disp_set_statusbar_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_navigationbar" />
+
+                <Switch
+                    android:id="@+id/disp_set_navigationbar_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_statusbar_drag" />
+
+                <Switch
+                    android:id="@+id/disp_set_statusbar_drag_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_gesturebar" />
+
+                <Switch
+                    android:id="@+id/disp_set_gesturebar_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_systemui" />
+
+                <Switch
+                    android:id="@+id/disp_set_systemui_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_get_hide_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_get_hide_list" />
+
+                <TextView
+                    android:id="@+id/disp_get_hide_list_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_add_hide_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_add_hide_list" />
+
+                <EditText
+                    android:id="@+id/disp_add_hide_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/disp_add_hide_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_del_hide_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_del_hide_list" />
+
+                <EditText
+                    android:id="@+id/disp_del_hide_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename" />
+
+                <TextView
+                    android:id="@+id/disp_del_hide_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_animation"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_animation" />
+
+                <EditText
+                    android:id="@+id/disp_set_animation_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/bootanimation.zip"/>
+
+                <TextView
+                    android:id="@+id/disp_set_animation_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_logo"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_logo" />
+
+                <EditText
+                    android:id="@+id/disp_set_logo_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/logo.bmp"/>
+
+                <TextView
+                    android:id="@+id/disp_set_logo_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- HDMI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disp_title_hdmi"
+                style="@style/texttitle"
+                android:text="@string/disp_title_hdmi" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_get_hdmiin"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_get_hdmiin" />
+
+                <TextView
+                    android:id="@+id/disp_get_hdmiin_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_hdmiin_audio" />
+
+                <Switch
+                    android:id="@+id/disp_set_hdmiin_audio_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/disp_set_hdmiin_nosignal"
+                    style="@style/btnstyle1"
+                    android:text="@string/disp_set_hdmiin_nosignal"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/disp_set_hdmiin_nosignal_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path" />
+
+                <TextView
+                    android:id="@+id/disp_set_hdmiin_nosignal_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_hdmiout" />
+
+                <Switch
+                    android:id="@+id/disp_set_hdmiout_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/disp_set_media_mode" />
+
+                <Switch
+                    android:id="@+id/disp_set_media_mode_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

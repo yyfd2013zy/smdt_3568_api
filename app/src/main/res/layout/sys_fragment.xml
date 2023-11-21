@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- settings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_settings"
+                style="@style/texttitle"
+                android:text="@string/sys_title_settings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_bluetooth" />
+
+                <Switch
+                    android:id="@+id/sys_set_bluetooth_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_hwstack" />
+
+                <Switch
+                    android:id="@+id/sys_set_hwstack_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_location" />
+
+                <Switch
+                    android:id="@+id/sys_set_location_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_airplane" />
+
+                <Switch
+                    android:id="@+id/sys_set_airplane_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_softkeyboard" />
+
+                <Switch
+                    android:id="@+id/sys_set_softkeyboard_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_keyreport" />
+
+                <Switch
+                    android:id="@+id/sys_set_keyreport_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_touchreport" />
+
+                <Switch
+                    android:id="@+id/sys_set_touchreport_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_def_inputmethod"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_def_inputmethod" />
+
+                <Spinner
+                    android:id="@+id/sys_set_def_inputmethod_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_def_inputmethod_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_system_fontsize"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_system_fontsize" />
+
+                <TextView
+                    android:id="@+id/sys_set_system_fontsize_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_copy_file"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_copy_file" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_copy_file_et1"
+                        style="@style/editstyle"
+                        android:hint="@string/path"
+                        android:text="/storage/emulated/0/Update.apk" />
+
+                    <EditText
+                        android:id="@+id/sys_copy_file_et2"
+                        style="@style/editstyle"
+                        android:hint="@string/path"
+                        android:text="/storage/emulated/0/Update_copy.apk" />
+
+                    <TextView
+                        android:id="@+id/sys_copy_file_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- Time and Language -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_time_language"
+                style="@style/texttitle"
+                android:text="@string/sys_title_time_language" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_ntp_server"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_ntp_server" />
+
+                <Spinner
+                    android:id="@+id/sys_set_ntp_server_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_ntp_server_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_national_language"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_national_language" />
+
+                <Spinner
+                    android:id="@+id/sys_set_national_language_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_national_language_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_timezone"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_timezone" />
+
+                <Spinner
+                    android:id="@+id/sys_set_timezone_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_timezone_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_timeformat"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_timeformat" />
+
+                <Spinner
+                    android:id="@+id/sys_set_timeformat_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_timeformat_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_time"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_time" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_set_time_year_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/year" />
+
+                    <EditText
+                        android:id="@+id/sys_set_time_month_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/month" />
+
+                    <EditText
+                        android:id="@+id/sys_set_time_day_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/day" />
+
+                    <EditText
+                        android:id="@+id/sys_set_time_hour_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/hour" />
+
+                    <EditText
+                        android:id="@+id/sys_set_time_min_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/min" />
+
+                    <TextView
+                        android:id="@+id/sys_set_time_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_network_time_sync" />
+
+                <Switch
+                    android:id="@+id/sys_set_network_time_sync_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- applications manager -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_app"
+                style="@style/texttitle"
+                android:text="@string/sys_title_app" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_launcher"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_launcher" />
+
+
+                <Spinner
+                    android:id="@+id/sys_set_launcher_spinner"
+                    style="@style/spinnerstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_launcher_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_system_boot_app"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_system_boot_app" />
+
+                <EditText
+                    android:id="@+id/sys_set_system_boot_app_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="android.app.smdt.apidemo/.MainActivity" />
+
+                <TextView
+                    android:id="@+id/sys_set_system_boot_app_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_daemons"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_daemons" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_set_daemons_et"
+                        style="@style/editstyle"
+                        android:hint="@string/packagename"
+                        android:text="android.app.smdt.apidemo/.MainActivity" />
+
+                    <EditText
+                        android:id="@+id/sys_set_daemons_time_et"
+                        style="@style/editstyle"
+                        android:layout_width="120dp"
+                        android:layout_weight="0"
+                        android:hint="@string/millis"
+                        android:text="5000" />
+
+                    <TextView
+                        android:id="@+id/sys_set_daemons_tv"
+                        style="@style/textstyle3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_do_silent_install"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_do_silent_install" />
+
+                <EditText
+                    android:id="@+id/sys_do_silent_install_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/Update.apk" />
+
+                <TextView
+                    android:id="@+id/sys_do_silent_install_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_do_silent_uninstall"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_do_silent_uninstall" />
+
+                <EditText
+                    android:id="@+id/sys_do_silent_uninstall_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename" />
+
+                <TextView
+                    android:id="@+id/sys_do_silent_uninstall_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_white_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_white_list" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <RadioGroup style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/install_white"
+                            style="@style/radiostyle"
+                            android:checked="true"
+                            android:text="@string/install_list" />
+
+                        <RadioButton
+                            android:id="@+id/uninstall_white"
+                            style="@style/radiostyle"
+                            android:text="@string/uninstall_list" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/sys_get_white_list_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_add_white_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_add_white_list" />
+
+                <EditText
+                    android:id="@+id/sys_add_white_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="android.app.smdt.apidemo" />
+
+                <TextView
+                    android:id="@+id/sys_add_white_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_del_white_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_del_white_list" />
+
+                <EditText
+                    android:id="@+id/sys_del_white_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename" />
+
+                <TextView
+                    android:id="@+id/sys_del_white_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_black_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_black_list" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <RadioGroup style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/install_black"
+                            style="@style/radiostyle"
+                            android:checked="true"
+                            android:text="@string/install_list" />
+
+                        <RadioButton
+                            android:id="@+id/uninstall_black"
+                            style="@style/radiostyle"
+                            android:text="@string/uninstall_list" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/sys_get_black_list_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_add_black_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_add_black_list" />
+
+                <EditText
+                    android:id="@+id/sys_add_black_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="android.app.smdt.apidemo" />
+
+                <TextView
+                    android:id="@+id/sys_add_black_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_del_black_list"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_del_black_list" />
+
+                <EditText
+                    android:id="@+id/sys_del_black_list_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename" />
+
+                <TextView
+                    android:id="@+id/sys_del_black_list_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_backup"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_backup" />
+
+                <EditText
+                    android:id="@+id/sys_set_backup_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="android.app.smdt.apidemo" />
+
+                <TextView
+                    android:id="@+id/sys_set_backup_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_backup"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_backup" />
+
+                <EditText
+                    android:id="@+id/sys_get_backup_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/sys_get_backup_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_get_backup_path" />
+
+                <TextView
+                    android:id="@+id/sys_get_backup_path"
+                    style="@style/textstyle2" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_auto_install" />
+
+                <Switch
+                    android:id="@+id/sys_set_auto_install_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_auto_install"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_auto_install" />
+
+                <TextView
+                    android:id="@+id/sys_get_auto_install_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_add_auto_install"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_add_auto_install" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_add_auto_install_path_et"
+                        style="@style/editstyle1"
+                        android:hint="@string/sys_auto_install_path"
+                        android:text="test/app.apk" />
+
+                    <EditText
+                        android:id="@+id/sys_add_auto_install_pkg_et"
+                        style="@style/editstyle"
+                        android:hint="@string/packagename"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/sys_add_auto_install_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_del_auto_install"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_del_auto_install" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+
+                    <EditText
+                        android:id="@+id/sys_del_auto_install_path_et"
+                        style="@style/editstyle"
+                        android:hint="@string/sys_auto_install_path"
+                        android:text="test/app.apk" />
+
+                    <EditText
+                        android:id="@+id/sys_del_auto_install_pkg_et"
+                        style="@style/editstyle"
+                        android:hint="@string/packagename"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/sys_del_auto_install_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- volume -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_volume"
+                style="@style/texttitle"
+                android:text="@string/sys_title_volume" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_volume" />
+
+                <android.app.smdt.apidemo.ui.MySeekBar
+                    android:id="@+id/sys_set_volume_seekbar"
+                    style="@style/seekbarstyle" />
+
+                <TextView
+                    android:id="@+id/sys_set_volume_tv"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_volume_mute" />
+
+                <Switch
+                    android:id="@+id/sys_set_volume_mute_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 style="@style/LinearLayoutstyle"
+                 android:addStatesFromChildren="false"
+                 android:clickable="false">
+
+                 <TextView
+                     style="@style/textstyle1"
+                     android:text="@string/sys_set_out_volume" />
+
+                 <android.app.smdt.apidemo.ui.MySeekBar
+                     android:id="@+id/sys_set_out_volume_seekbar"
+                     style="@style/seekbarstyle" />
+
+                 <TextView
+                     android:id="@+id/sys_set_out_volume_tv"
+                     style="@style/textstyle5" />
+
+             </LinearLayout>
+
+             <ImageView style="@style/linestyle" />
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_audio_output"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_audio_output" />
+
+                <TextView
+                    android:id="@+id/sys_set_audio_output_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_audio_input"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_audio_input" />
+
+                <TextView
+                    android:id="@+id/sys_set_audio_input_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- io control -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_io"
+                style="@style/texttitle"
+                android:text="@string/sys_title_io" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_gpio" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <Spinner
+                        android:id="@+id/sys_set_gpio_spinner"
+                        style="@style/spinnerstyle" />
+
+                    <RadioGroup
+                        android:id="@+id/sys_set_gpio_direction_group"
+                        style="@style/radioGroupstyle">
+
+                        <RadioButton
+                            android:id="@+id/gpio_in"
+                            style="@style/radiostyle"
+                            android:text="@string/sys_set_gpio_direction_in" />
+
+                        <RadioButton
+                            android:id="@+id/gpio_out"
+                            style="@style/radiostyle"
+                            android:text="@string/sys_set_gpio_direction_out" />
+
+                    </RadioGroup>
+
+                    <ToggleButton
+                        android:id="@+id/sys_set_gpio_value"
+                        style="@style/ToggleBtnstyle"
+                        android:enabled="false"
+                        android:textOff="@string/sys_set_gpio_value_low"
+                        android:textOn="@string/sys_set_gpio_value_high" />
+
+                    <TextView
+                        android:id="@+id/sys_set_gpio_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_gpio"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_gpio" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_control" />
+
+                <Spinner
+                    android:id="@+id/sys_set_control_spinner"
+                    style="@style/spinnerstyle" />
+
+                <Switch
+                    android:id="@+id/sys_set_control_switch"
+                    style="@style/switchstyle"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- timer switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_timer"
+                style="@style/texttitle"
+                android:text="@string/sys_title_timer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_watchdog" />
+
+                <Switch
+                    android:id="@+id/sys_set_watchdog_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_watchdog_feed"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_watchdog_feed" />
+
+                <TextView
+                    android:id="@+id/sys_set_watchdog_feed_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_watchdog_time"
+                    style="@style/btnstyle1"
+                    android:enabled="false"
+                    android:text="@string/sys_set_watchdog_time"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/sys_set_watchdog_time_et"
+                    style="@style/editstyle3"
+                    android:hint="@string/second" />
+
+                <TextView
+                    android:id="@+id/sys_set_watchdog_time_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_timer" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_time_et"
+                        style="@style/editstyle3"
+                        android:inputType="text"
+                        android:digits="0123456789:"
+                        android:hint="@string/sys_set_timer_off_time" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_time_et"
+                        style="@style/editstyle3"
+                        android:inputType="text"
+                        android:digits="0123456789:"
+                        android:hint="@string/sys_set_timer_on_time" />
+
+                    <Switch
+                        android:id="@+id/sys_set_timer"
+                        style="@style/switchstyle"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_timer_off" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_year_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/year" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_month_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/month" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_day_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/day" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_hour_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/hour" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_off_min_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/min" />
+
+                    <Switch
+                        android:id="@+id/sys_set_timer_off"
+                        style="@style/switchstyle"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_timer_on" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_year_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/year" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_month_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/month" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_day_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/day" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_hour_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/hour" />
+
+                    <EditText
+                        android:id="@+id/sys_set_timer_on_min_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/min" />
+
+                    <Switch
+                        android:id="@+id/sys_set_timer_on"
+                        style="@style/switchstyle"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <!-- update and debug -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sys_title_debug"
+                style="@style/texttitle"
+                android:text="@string/sys_title_debug" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_development" />
+
+                <Switch
+                    android:id="@+id/sys_set_development_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_do_update"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_do_update" />
+
+                <EditText
+                    android:id="@+id/sys_do_update_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/update.zip" />
+
+                <TextView
+                    android:id="@+id/sys_do_update_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_power_off"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_power_off" />
+
+                <TextView
+                    android:id="@+id/sys_set_power_off_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_reboot"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_reboot" />
+
+                <TextView
+                    android:id="@+id/sys_set_reboot_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_reboot_mcu"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_reboot_mcu" />
+
+                <TextView
+                    android:id="@+id/sys_set_reboot_mcu_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_recovery"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_recovery" />
+
+                <TextView
+                    android:id="@+id/sys_recovery_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_get_systemlog" />
+
+                <Spinner
+                    android:id="@+id/sys_get_systemlog_spinner"
+                    style="@style/spinnerstyle" />
+
+                <Switch
+                    android:id="@+id/sys_get_systemlog_switch"
+                    style="@style/switchstyle"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_processlog"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_processlog" />
+
+                <TextView
+                    android:id="@+id/sys_get_processlog_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_anr"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_anr" />
+
+                <EditText
+                    android:id="@+id/sys_get_anr_et"
+                    style="@style/editstyle"
+                    android:hint="@string/path"
+                    android:text="/storage/emulated/0/anr.txt" />
+
+                <TextView
+                    android:id="@+id/sys_get_anr_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_set_api_debug"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_set_api_debug" />
+
+                <TextView
+                    android:id="@+id/sys_set_api_debug_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/sys_get_api_error"
+                    style="@style/btnstyle1"
+                    android:text="@string/sys_get_api_error" />
+
+                <EditText
+                    android:id="@+id/sys_get_api_error_et"
+                    style="@style/editstyle"
+                    android:inputType="textNoSuggestions|textMultiLine|phone|numberSigned" />
+
+                <TextView
+                    android:id="@+id/sys_get_api_error_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_adb" />
+
+                <Switch
+                    android:id="@+id/sys_set_adb_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_adb_net" />
+
+                <Switch
+                    android:id="@+id/sys_set_adb_net_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_otg" />
+
+                <Switch
+                    android:id="@+id/sys_set_otg_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_pointer" />
+
+                <Switch
+                    android:id="@+id/sys_set_pointer_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_float_ball" />
+
+                <Switch
+                    android:id="@+id/sys_set_float_ball_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/sys_set_update_ex" />
+
+                <Switch
+                    android:id="@+id/sys_set_update_ex_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

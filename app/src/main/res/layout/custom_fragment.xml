@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_send_wg_card"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_send_wg_card" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/custom_send_wg_card_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/number" />
+
+                    <Spinner
+                        android:id="@+id/custom_send_wg_card_spinner"
+                        style="@style/spinnerstyle" />
+
+                    <TextView
+                        android:id="@+id/custom_send_wg_card_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_send_wg_card2"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_send_wg_card2" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/custom_send_wg_card2_hid_et"
+                        style="@style/editstyle3"
+                        android:hint="HID" />
+
+                    <EditText
+                        android:id="@+id/custom_send_wg_card2_pid_et"
+                        style="@style/editstyle3"
+                        android:hint="PID" />
+
+                    <Spinner
+                        android:id="@+id/custom_send_wg_card2_spinner"
+                        style="@style/spinnerstyle" />
+
+                    <TextView
+                        android:id="@+id/custom_send_wg_card2_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_read_wg"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_read_wg" />
+
+                <TextView
+                    android:id="@+id/custom_read_wg_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_release_wg"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_release_wg" />
+
+                <TextView
+                    android:id="@+id/custom_release_wg_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_set_relay_mode"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_set_relay_mode" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/custom_set_relay_mode_et"
+                        style="@style/editstyle3"
+                        android:hint="@string/second"
+                        android:text="15" />
+
+                    <Spinner
+                        android:id="@+id/custom_set_relay_mode_spinner"
+                        style="@style/spinnerstyle" />
+
+                    <TextView
+                        android:id="@+id/custom_set_relay_mode_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/custom_set_relay" />
+
+                <Switch
+                    android:id="@+id/custom_set_relay_switch"
+                    style="@style/switchstyle" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_dial"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_dial" />
+
+                <EditText
+                    android:id="@+id/custom_dial_et"
+                    style="@style/editstyle3" />
+
+                <TextView
+                    android:id="@+id/custom_dial_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_endcall"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_endcall" />
+
+                <TextView
+                    android:id="@+id/custom_endcall_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_clean_recent"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_clean_recent" />
+
+                <TextView
+                    android:id="@+id/custom_clean_recent_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+
+                <Button
+                    android:id="@+id/custom_get_pid"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_get_pid" />
+
+                <EditText
+                    android:id="@+id/custom_get_pid_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="android.app.smdt.apidemo" />
+
+                <TextView
+                    android:id="@+id/custom_get_pid_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+
+                <Button
+                    android:id="@+id/custom_get_pid_info"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_get_pid_info" />
+
+                <EditText
+                    android:id="@+id/custom_get_pid_info_et"
+                    style="@style/editstyle3"
+                    android:hint="PID"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/custom_get_pid_info_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_kill_pid"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_kill_pid" />
+
+                <EditText
+                    android:id="@+id/custom_kill_pid_et"
+                    style="@style/editstyle3"
+                    android:hint="PID"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/custom_kill_pid_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_get_encryption"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_get_encryption" />
+
+                <TextView
+                    android:id="@+id/custom_get_encryption_tv"
+                    style="@style/textstyle4" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+
+                <Button
+                    android:id="@+id/custom_add_encryption"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_add_encryption" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/custom_add_encryption_et"
+                        style="@style/editstyle1"
+                        android:hint="@string/packagename"
+                        android:text="android.app.smdt.apidemo" />
+
+                    <EditText
+                        android:id="@+id/custom_add_encryption_oldpwd_et"
+                        style="@style/editstyle"
+                        android:hint="@string/old_pwd"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/custom_add_encryption_pwd_et"
+                        style="@style/editstyle"
+                        android:hint="@string/pwd"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/custom_add_encryption_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_del_encryption"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_del_encryption" />
+
+                <LinearLayout style="@style/LinearLayoutstyle2">
+
+                    <EditText
+                        android:id="@+id/custom_del_encryption_et"
+                        style="@style/editstyle"
+                        android:hint="@string/packagename"
+                        android:text="android.app.smdt.apidemo"/>
+
+                    <EditText
+                        android:id="@+id/custom_del_encryption_pwd_et"
+                        style="@style/editstyle"
+                        android:hint="@string/pwd" />
+
+                    <TextView
+                        android:id="@+id/custom_del_encryption_tv"
+                        style="@style/textstyle8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/custom_ledbrightness_id0" />
+
+                <android.app.smdt.apidemo.ui.MySeekBar
+                    android:id="@+id/custom_ledbrightness_seekbar0"
+                    style="@style/seekbarstyle" />
+
+                <TextView
+                    android:id="@+id/custom_ledbrightness_value0"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutstyle"
+                android:addStatesFromChildren="false"
+                android:clickable="false">
+
+                <TextView
+                    style="@style/textstyle1"
+                    android:text="@string/custom_ledbrightness_id1" />
+
+                <android.app.smdt.apidemo.ui.MySeekBar
+                    android:id="@+id/custom_ledbrightness_seekbar1"
+                    style="@style/seekbarstyle" />
+
+                <TextView
+                    android:id="@+id/custom_ledbrightness_value1"
+                    style="@style/textstyle5" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutstyle">
+
+                <Button
+                    android:id="@+id/custom_set_desktop_app"
+                    style="@style/btnstyle1"
+                    android:text="@string/custom_set_desktop_app" />
+
+                <EditText
+                    android:id="@+id/custom_set_desktop_app_et"
+                    style="@style/editstyle"
+                    android:hint="@string/packagename"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/custom_set_desktop_app_tv"
+                    style="@style/textstyle3" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/linestyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

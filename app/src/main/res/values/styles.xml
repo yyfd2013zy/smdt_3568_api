@@ -1,0 +1,366 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <!--Tablayout字体大小-->
+    <style name="TabLayoutTextSize">
+        <item name="android:textSize">25sp</item>  <!--设置Tablayout字体大小-->
+    </style>
+
+    <!--LinearLayout 样式-->
+    <style name="LinearLayoutstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:background">@drawable/linearlayout_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:addStatesFromChildren">true</item>
+    </style>
+
+    <!--LinearLayout2 多个控件对齐使用,占2-->
+    <style name="LinearLayoutstyle2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--Textview 1 样式 小标题-->
+    <style name="textstyle1" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 2 样式 一行2个控件，tv居中-->
+    <style name="textstyle2" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 3 样式 一行3个控件 -->
+    <style name="textstyle3" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 4 样式 一行2个控件，tv偏右 -->
+    <style name="textstyle4" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 5 样式 seekbar -->
+    <style name="textstyle5" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 6 样式 分组标题 -->
+    <style name="texttitle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_title</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 7 样式 spinner text -->
+    <style name="textstyle7" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 8 样式 多控件，tv减少占用 -->
+    <style name="textstyle8" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <!--Textview 9样式 spinner item -->
+    <style name="textstyle9" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 下划线样式 -->
+    <style name="linestyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!-- Button 样式-->
+    <style name="btnstyle1" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <!--<item name="android:background">@drawable/dialog_button_press</item>-->
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--EditText 样式-->
+    <style name="editstyle" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:inputType">textNoSuggestions|textMultiLine</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--EditText1 样式 占2格-->
+    <style name="editstyle1" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:inputType">textNoSuggestions|textMultiLine</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--EditText2 样式 不带下划线-->
+    <style name="editstyle2" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:inputType">textNoSuggestions|textMultiLine</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--EditText3 样式 只能输入数字-->
+    <style name="editstyle3" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:inputType">textNoSuggestions|textMultiLine|phone|number</item>
+        <item name="android:digits">1234567890</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--Switch 样式-->
+    <style name="switchstyle" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:paddingLeft">@dimen/margin_text</item>
+        <item name="android:paddingRight">@dimen/margin_text</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--Seekbar 样式-->
+    <style name="seekbarstyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_circle</item>
+        <item name="android:thumbOffset">10dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:mirrorForRtl">true</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">4dp</item>
+        <item name="android:maxHeight">4dp</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="spinnerstyle" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+    </style>
+
+    <!-- Spinner 2-->
+    <style name="spinnerstyle2" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <!-- RadioGroup -->
+    <style name="radioGroupstyle" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <!-- Radio -->
+    <style name="radiostyle" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_text</item>
+        <item name="android:paddingBottom">@dimen/padding_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- ToggleButton -->
+    <style name="ToggleBtnstyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/padding_text</item>
+        <item name="android:layout_marginRight">@dimen/padding_text</item>
+    </style>
+
+    <style name="dialog_ip_item">
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginStart">8dip</item>
+        <item name="android:layout_marginEnd">8dip</item>
+        <item name="android:paddingStart">8dip</item>
+        <item name="android:paddingEnd">8dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="dialog_ip_item_label">
+        <item name="android:paddingStart">8dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Body1</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="dialog_ip_item_edit_content">
+        <item name="android:paddingStart">4dip</item>
+        <item name="android:layout_marginStart">4dip</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyButtonStyle" >
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>
